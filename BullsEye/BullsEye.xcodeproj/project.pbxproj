@@ -16,6 +16,7 @@
 		318FD98924EEC4DE00DEE129 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FD98824EEC4DE00DEE129 /* AlertVC.swift */; };
 		318FD98C24EEC52300DEE129 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FD98B24EEC52300DEE129 /* Enums.swift */; };
 		318FD99924EECE0400DEE129 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FD99824EECE0400DEE129 /* AlertService.swift */; };
+		318FD9BB24EF0A8400DEE129 /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FD9BA24EF0A8400DEE129 /* CommonHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		318FD98824EEC4DE00DEE129 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		318FD98B24EEC52300DEE129 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		318FD99824EECE0400DEE129 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		318FD9BA24EF0A8400DEE129 /* CommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +77,9 @@
 		318FD98A24EEC50600DEE129 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				318FD99724EECDE600DEE129 /* New Group */,
 				318FD98B24EEC52300DEE129 /* Enums.swift */,
 				318FD99824EECE0400DEE129 /* AlertService.swift */,
+				318FD9BA24EF0A8400DEE129 /* CommonHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -155,13 +157,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		318FD99724EECDE600DEE129 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +254,7 @@
 			files = (
 				318FD97424EEA85500DEE129 /* ViewController.swift in Sources */,
 				318FD98924EEC4DE00DEE129 /* AlertVC.swift in Sources */,
+				318FD9BB24EF0A8400DEE129 /* CommonHelper.swift in Sources */,
 				318FD98C24EEC52300DEE129 /* Enums.swift in Sources */,
 				318FD97024EEA85500DEE129 /* AppDelegate.swift in Sources */,
 				318FD99924EECE0400DEE129 /* AlertService.swift in Sources */,

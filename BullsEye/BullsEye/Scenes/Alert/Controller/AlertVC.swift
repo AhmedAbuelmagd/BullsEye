@@ -21,6 +21,7 @@ class AlertVC: UIViewController {
     @IBOutlet weak var bodyLbl: UILabel!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var actionBtn: UIButton!
+    @IBOutlet weak var mainView: UIView!
     
     // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -30,6 +31,12 @@ class AlertVC: UIViewController {
     
     // MARK: - Functions
     func initAlert() {
+        mainQueue {
+            self.mainView.layer.cornerRadius = 10
+            self.mainView.clipsToBounds = true
+            self.cancelBtn.layer.cornerRadius = 10
+            self.actionBtn.layer.cornerRadius = 10
+        }
         titleLbl.text = alertTitle
         bodyLbl.text = alertBody
         actionBtn.setTitle(actionBtnTitle, for: .normal)
