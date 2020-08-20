@@ -10,17 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let alertServices = AlertService()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func btnClicked(_ sender: Any) {
-        print("Hello!")
-        
-        let alert = UIAlertController(title: "Hello", message: "This is my first app", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        let alertVC = AlertService.alert(title: "Alert" , body: "The body of alert", btnTitle: "Confirm") {
+            //Do what you want to do
+            print("This  is clus")
+        }
+        present(alertVC, animated: true, completion: nil)
     }
 }

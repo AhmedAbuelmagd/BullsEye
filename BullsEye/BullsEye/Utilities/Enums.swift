@@ -11,3 +11,7 @@ enum STORYBOARDS: String, CaseIterable {
     case main = "Main"
     case alert = "Alert"
 }
+// MARK: - Identifier Enum
+enum IDENTIFIERS: String, CaseIterable {
+    case alert = "AlertVC"
+}
