@@ -13,6 +13,9 @@
 		318FD97724EEA85500DEE129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318FD97524EEA85500DEE129 /* Main.storyboard */; };
 		318FD97924EEA85900DEE129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 318FD97824EEA85900DEE129 /* Assets.xcassets */; };
 		318FD97C24EEA85900DEE129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318FD97A24EEA85900DEE129 /* LaunchScreen.storyboard */; };
+		318FD98724EEC4B800DEE129 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 318FD98624EEC4B800DEE129 /* Alert.storyboard */; };
+		318FD98924EEC4DE00DEE129 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FD98824EEC4DE00DEE129 /* AlertVC.swift */; };
+		318FD98C24EEC52300DEE129 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318FD98B24EEC52300DEE129 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		318FD97824EEA85900DEE129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		318FD97B24EEA85900DEE129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318FD97D24EEA85900DEE129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		318FD98624EEC4B800DEE129 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
+		318FD98824EEC4DE00DEE129 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		318FD98B24EEC52300DEE129 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,98 @@
 		318FD96E24EEA85500DEE129 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				318FD98E24EEC6FD00DEE129 /* Scenes */,
+				318FD98A24EEC50600DEE129 /* Utilities */,
 				318FD96F24EEA85500DEE129 /* AppDelegate.swift */,
 				318FD97124EEA85500DEE129 /* SceneDelegate.swift */,
-				318FD97324EEA85500DEE129 /* ViewController.swift */,
-				318FD97524EEA85500DEE129 /* Main.storyboard */,
 				318FD97824EEA85900DEE129 /* Assets.xcassets */,
 				318FD97A24EEA85900DEE129 /* LaunchScreen.storyboard */,
 				318FD97D24EEA85900DEE129 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		318FD98A24EEC50600DEE129 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				318FD98B24EEC52300DEE129 /* Enums.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		318FD98E24EEC6FD00DEE129 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				318FD99024EEC72700DEE129 /* Main */,
+				318FD98F24EEC71800DEE129 /* Alert */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		318FD98F24EEC71800DEE129 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				318FD99324EEC77200DEE129 /* View */,
+				318FD99224EEC76200DEE129 /* Controller */,
+				318FD99124EEC75600DEE129 /* Storyboard */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		318FD99024EEC72700DEE129 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				318FD99624EEC81200DEE129 /* View */,
+				318FD99524EEC80B00DEE129 /* Controller */,
+				318FD99424EEC80500DEE129 /* Storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		318FD99124EEC75600DEE129 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				318FD98624EEC4B800DEE129 /* Alert.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		318FD99224EEC76200DEE129 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				318FD98824EEC4DE00DEE129 /* AlertVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		318FD99324EEC77200DEE129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		318FD99424EEC80500DEE129 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				318FD97524EEA85500DEE129 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		318FD99524EEC80B00DEE129 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				318FD97324EEA85500DEE129 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		318FD99624EEC81200DEE129 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +166,7 @@
 				318FD96824EEA85500DEE129 /* Sources */,
 				318FD96924EEA85500DEE129 /* Frameworks */,
 				318FD96A24EEA85500DEE129 /* Resources */,
+				318FD98D24EEC63900DEE129 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,10 +218,31 @@
 				318FD97C24EEA85900DEE129 /* LaunchScreen.storyboard in Resources */,
 				318FD97924EEA85900DEE129 /* Assets.xcassets in Resources */,
 				318FD97724EEA85500DEE129 /* Main.storyboard in Resources */,
+				318FD98724EEC4B800DEE129 /* Alert.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318FD98D24EEC63900DEE129 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		318FD96824EEA85500DEE129 /* Sources */ = {
@@ -139,6 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				318FD97424EEA85500DEE129 /* ViewController.swift in Sources */,
+				318FD98924EEC4DE00DEE129 /* AlertVC.swift in Sources */,
+				318FD98C24EEC52300DEE129 /* Enums.swift in Sources */,
 				318FD97024EEA85500DEE129 /* AppDelegate.swift in Sources */,
 				318FD97224EEA85500DEE129 /* SceneDelegate.swift in Sources */,
 			);

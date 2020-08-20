@@ -1,0 +1,74 @@
+disabled_rules: # rule identifiers to exclude from running
+    - trailing_whitespace
+    #- colon
+    - comma
+    - control_statement
+    - force_cast
+    - line_length
+    - type_name
+    - variable_name
+    - variable_name_min_length
+    - shorthand_operator
+    - function_body_length
+    - file_length
+    - type_body_length
+    - cyclomatic_complexity
+    - large_tuple
+
+opt_in_rules: # some rules are only opt-in
+# - empty_count
+# Find all the available rules by running:
+# swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+    - BullsEye
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+    - Carthage
+    - Pods
+    - Source/ExcludedFolder
+    - Source/ExcludedFile.swift
+    - Source/*/ExcludedFile.swift # Exclude files with a wildcard
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+    - explicit_self
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: error # implicitly
+force_try:
+    severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 100000
+# they can set both implicitly with an array
+type_body_length:
+# - 300 # warning
+# - 400 # error
+# or they can set both explicitly
+file_length:
+#  warning: 500
+# error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+
+#max_empty_lines: 1
+
+cyclomatic_complexity:
+warning: 50000
+
+cyclomatic_complexity:
+warning: 200
+
+type_name:
+    min_length: 2 # only warning
+    max_length: # warning and error
+    warning: 200
+    error: 50
+    excluded: iPhone # excluded via string
+    allowed_symbols: "_" # these are allowed in type names
+identifier_name:
+    allowed_symbols: "_"
+    min_length: 2
+    max_length:
+    warning: 90
+    error: 1000
+
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji, sonarqube, markdown)

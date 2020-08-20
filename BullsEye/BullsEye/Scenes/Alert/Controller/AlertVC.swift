@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AlertVC.swift
 //  BullsEye
 //
 //  Created by Ahmed Abuelmagd on 8/20/20.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AlertVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
 }
-
