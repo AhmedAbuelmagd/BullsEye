@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import MOLH
 
 class ViewController: UIViewController {
 
     let alertServices = AlertService()
+    @IBOutlet weak var languageLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        languageLbl.text = "lang".localized
         // Do any additional setup after loading the view.
     }
 
@@ -22,5 +25,10 @@ class ViewController: UIViewController {
             print("This  is clus")
         }
         present(alertVC, animated: true, completion: nil)
+    }
+    @IBAction func languageBtnClicked(_ sender: UIButton) {
+        print("languageBtnClicked")
+        changeAppLanguage(controller: self, resetControllerId: "ViewController")
+        MOLH.reset()
     }
 }

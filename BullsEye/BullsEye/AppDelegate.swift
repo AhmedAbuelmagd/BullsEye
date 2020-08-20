@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 @UIApplicationMain
 
@@ -14,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    func localize() {
+        MOLH.reset()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        MOLH.shared.activate(true)
         return true
     }
 }
